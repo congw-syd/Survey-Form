@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  
+<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<h1 id="title">Game Night</h1>
+<p  id="description">collect game ideas. </p>
+<div id="img-div">
+  <img id="img" src="https://fsa.zobj.net/crop.php?r=sOron0R27f-4QjZNhojJFx04XiF9GFwHGL5RBRHIEUeIGroCO8qg8xdKXRo88ENSwb825rPXug2keC7Z63fhJNRoDjXdeepJNLYfSLGGOcxRZN3tvtGZc2doI4PkyT2pATmrFMpBDdkE_Ukn" alt="" ></img>
+</div>
+<form id="survey-form">
+  <div id="container">
+  
+    <div id="rows"> 
+      <div class="labels"><label id="name-label" for="name" required>Name:</label></div>
+     <div class="answers"><input autofocus id="name" type="text" placeholder="full name"></div>
+   </div>
+    
+    <div id="rows">
+      <div class="labels"><label id="email-label" for="email" >Email:</label></div>
+      <div class="answers"><input id="email" type="email" required placeholder="email address"></div>
+    </div>
+    
+    <div id="rows">
+      <div class="labels"><label id="number-label" for="number">Age: </label></div>
+      <div class="answers"><input id="number" type="number" min="18" max="70" placeholder="age"></div>
+    </div>
+    
+    <div id="rows">
+    <div class="labels"><label >Gender:</label></div>
+    <div class="answers"> <input type="radio" name="gender">F<br>
+    <input type="radio" name="gender">M<br>
+    <input type="radio" name="gender">U</div>
+  </div>
+    
+  <div id="rows">
+    <div class="labels"><label >Choose Time:</label></div>
+    <div class="answers"><select id="dropdown">
+    <option value="1">Friday Night</option>
+    <option value="2">Saturday Night</option>
+    <option value="3">Sunday Night</option>
+  </select></div>
+  </div>
+    
+  <div id="rows">
+    <div class="labels"><label> Choose Game: </label></div>
+    <div class="answers">
+      <input type="checkbox" value="clue">Clue<br>
+      <input type="checkbox" value="twister">Twister<br>
+      <input type="checkbox" value="card">Card Game<br>
+      <input type="checkbox" value="other">Others<br>
+      <input type="text" placeholder="please specify">
+    </div>
+  </div>
+    
+     <div id="rows">
+    <div class="labels"><label> Conments: </label></div>
+       <div class="answers"><textarea class="input-field" placeholder="Enter your comment here..."></textarea>
+       </div>
+  </div>
+   
+    <div id="butt">
+    <input id="submit" type="image" value="Submit" src="https://i.stack.imgur.com/7adXU.jpg" width=50px height=50px>
+     
+      <!--<input id="submit" type="submit" value="Submit"> --> 
+    </div>
+    
+  </div>
+</form>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
