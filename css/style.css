@@ -16,10 +16,9 @@ h1,p{
   margin-top: 50px;
 }
 #container{
-  max-width:80vh;
-  display:block;
-  height:auto;
-  width: auto;
+  margin: 0 auto;
+  width: 75%;
+  max-width: 900px;
 }
 #img-div{
   display: flex;
@@ -58,5 +57,15 @@ textarea{
   resize:vertical;
 }
 
+ 
+@media screen and (max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .answers {
+    width: 80%;
+    float: left;
+  }
 
 
